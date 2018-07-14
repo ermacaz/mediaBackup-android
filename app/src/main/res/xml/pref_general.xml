@@ -1,0 +1,43 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="example_switch"
+        android:summary="@string/pref_description_social_recommendations"
+        android:title="@string/pref_title_social_recommendations" />
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_backup_server"
+        android:inputType="textUri"
+        android:key="backup_server_domain"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_backup_server" />
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_backup_server_username"
+        android:inputType="textAutoComplete"
+        android:key="backup_server_username"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_backup_server_username" />
+
+    <EditTextPreference
+        android:hint="password"
+        android:inputType="textPassword"
+        android:key="backup_server_password"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_backup_server_password" />
+
+
+    <Preference
+        android:key="authenticate_button"
+        android:title="@string/authenticate_now"/>
+
+</PreferenceScreen>
